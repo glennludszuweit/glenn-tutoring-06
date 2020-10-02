@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 40px 0;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .news-container {
+  display: flex;
+  margin: 20px 0;
+}
+.container .news-container .news-img img {
+  width: 400px;
+  height: 300px;
+}
+.container .news-container .news-details {
+  padding: 20px;
+}
+.container .news-container .news-details h2 {
+  font-size: 30px;
+}
+.container .news-container .news-details p {
+  padding: 20px 0;
+}
