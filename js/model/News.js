@@ -1,8 +1,4 @@
 class News {
-  constructor() {
-    // future code
-  }
-
   async newsData() {
     try {
       const url = `https://finnhub.io/api/v1/news?category=general&token=btqofvf48v6oqq03kajg`;

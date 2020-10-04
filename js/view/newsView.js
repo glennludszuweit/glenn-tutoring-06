@@ -1,7 +1,7 @@
 import News from '../model/News.js';
 
 class NewsView {
-  async newsLists() {
+  async latestNews() {
     let news = await News.newsData();
     let html = news.map((news) => {
       return `
@@ -11,7 +11,9 @@ class NewsView {
           </div>
           <div class="news-details">
             <h2>${news.headline}</h2>
-            <small>${news.datetime} - ${news.source}</small>
+            <small>${new Date(news.datetime * 1000).toDateString()} - ${
+        news.source
+      }</small>
             <p>${news.summary}</p>
             <small><a href="${news.url}">read more =></a></small>
           </div>
