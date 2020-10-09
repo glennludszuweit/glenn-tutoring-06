@@ -30,3 +30,8 @@ h1 {
 .container .news-container .news-details p {
   padding: 20px 0;
 }
+
+.url_and_add {
+  display: flex;
+  justify-content: space-between;
+}
